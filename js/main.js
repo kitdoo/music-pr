@@ -9,7 +9,7 @@ $(document).ready(function() {
 		singleItem: true,
 		navigation: true,
 		theme: "track-slider-theme",
-		navigationText : ["<<<<<",">>>>>>"],
+		navigationText : ["",""],
 		slideSpeed: 600
 	});
 
