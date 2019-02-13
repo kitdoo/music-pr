@@ -3,6 +3,7 @@
 }
 .composition__video {
 	height: 420px;
+	margin-bottom: 50px;
 	
 	
 }
@@ -39,11 +40,49 @@
 	height: 420px;
 	background-color: #f5f6f6;
 	padding: 35px 60px 40px 20px;
+	position: relative;
+	margin-bottom: 50px;
 }
 .composition__disc-card--special {
 	background-color: transparent;
 	margin-top: 370px;
 	height: 500px;
+}
+.composition__disc-card--triangle-1 {
+	@cornerSize: 12px;
+	&:after {
+		content: "";
+		position: absolute;
+		left: 633px;
+		top: 200px;
+		
+		margin-left: @cornerSize;
+		width: 0;
+		height: 0;
+		border-left: @cornerSize solid #f5f6f6;
+		border-top: @cornerSize solid transparent;
+		border-bottom: @cornerSize solid transparent;
+		
+	}
+	
+}
+.composition__disc-card--triangle-2 {
+	@cornerSize: 12px;
+	&:after {
+		content: "";
+		position: absolute;
+		right: 645px;
+		top: 200px;
+		
+		margin-left: @cornerSize;
+		width: 0;
+		height: 0;
+		border-right: @cornerSize solid #f5f6f6;
+		border-top: @cornerSize solid transparent;
+		border-bottom: @cornerSize solid transparent;
+		
+	}
+	
 }
 .social {
 	width: 330px;
@@ -53,11 +92,16 @@
 	position: absolute;
 	right: 60px;
 	bottom: 35px;
-	padding-top: 30px;
+	padding-top: 30px;	
+	display: flex;
+	-webkit-align-items: center;
+	        align-items: center;
+	    -webkit-justify-content: space-around;
+	            justify-content: space-around;
 	
 }
-.social-items {
-	display: inline-block;
+.social-icon-text {
+	margin-left: -20px;
 }
 
 .social-icon-1,.social-icon-2,.social-icon-3,.social-icon-4 {

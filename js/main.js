@@ -5,11 +5,11 @@ $(document).ready(function() {
 
 	//Вызов слайдера
 
-	$("#top-slider").owlCarousel({
+	$("#track-slider").owlCarousel({
 		singleItem: true,
 		navigation: true,
-		theme: "top-slider-theme",
-		navigationText : ["",""],
+		theme: "track-slider-theme",
+		navigationText : ["<<<<<",">>>>>>"],
 		slideSpeed: 600
 	});
 
