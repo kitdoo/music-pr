@@ -24,18 +24,16 @@ $(document).ready(function() {
 		rules: {
 			name: { required: true },
 			email: { required: true, email: true },
-			// skype:  { required: true },
-			// phone:  { required: true },
 			message: { required: true }
 		},
 
 		messages: {
-			name: "Пожалуйста, введите свое имя",
+			name: "Enter you name",
 			email: {
-				required: "Пожалуйста, введите свой email",
+				required: "Enter you Email",
 				email: "Email адрес должен быть в формате name@domain.com . Возможно вы ввели email с ошибкой."
 			},
-			message: "Пожалуйста, введите текст сообщения"
+			message: "Enter message text"
 		},
 		    submitHandler: function(form) {
             ajaxFormSubmit();
