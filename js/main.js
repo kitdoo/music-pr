@@ -18,5 +18,45 @@ $(document).ready(function() {
 	    highlightSelector:"nav a"
 	});
 
+
+		// jQuery Validate JS
+	$("#contact-form").validate({
+		rules: {
+			name: { required: true },
+			email: { required: true, email: true },
+			// skype:  { required: true },
+			// phone:  { required: true },
+			message: { required: true }
+		},
+
+		messages: {
+			name: "Пожалуйста, введите свое имя",
+			email: {
+				required: "Пожалуйста, введите свой email",
+				email: "Email адрес должен быть в формате name@domain.com . Возможно вы ввели email с ошибкой."
+			},
+			message: "Пожалуйста, введите текст сообщения"
+		},
+		    submitHandler: function(form) {
+            ajaxFormSubmit();
+        }
+	
+  })
+
+	    function ajaxFormSubmit() {
+        var string = $("#contact-form").serialize();
+        
+        $.ajax( {
+            type: "POST",
+            url: "php/mail.php",
+            data: string,
+            success: function(html) {
+                $("#contact-form").slideUp(800);
+                $('#answer').html(html);
+            }
+        });
+        
+        return false;
+    }
 	
 });
