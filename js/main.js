@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-
-
-
 	//Вызов слайдера
 
 	$("#track-slider").owlCarousel({
