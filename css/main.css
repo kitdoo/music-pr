@@ -97,21 +97,6 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.container {
-  width: 400px;
-  padding-left: 0;
-  padding-right: 0;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
 /*@media (min-width: 1200px) {
 		margin-bottom: 0px;
 	}*/
@@ -192,6 +177,7 @@ font-family: 'Dosis', sans-serif;
   }
 }
 .navigation__list li {
+  font-family: 'Dosis', sans-serif;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -255,6 +241,7 @@ font-family: 'Dosis', sans-serif;
   background: linear-gradient(to top, #fafafa, #ffffff 50%);
   width: 100%;
   height: auto;
+  padding-top: 150px;
   background-image: url(../img/bg/bg-body1.png);
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -312,6 +299,7 @@ font-family: 'Dosis', sans-serif;
 .tours {
   width: 100%;
   height: auto;
+  padding-top: 150px;
   background-image: url(../img/bg/bg-img-99.png);
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -319,33 +307,30 @@ font-family: 'Dosis', sans-serif;
   -o-background-size: 100%;
   background-size: 100%;
 }
+.compositions {
+  padding-top: 150px;
+}
 .composition__video {
   height: 420px;
   margin-bottom: 50px;
 }
-.composition__video--1 {
-  background-image: url(../img/video/v1.jpg);
+.composition__video--1,
+.composition__video--2,
+.composition__video--3 {
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.composition__video--1 {
+  background-image: url(../img/video/v1.jpg);
 }
 .composition__video--2 {
   background-image: url(../img/video/v2.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
 }
 .composition__video--3 {
   background-image: url(../img/video/v3.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
 }
 .composition__disc-card {
   height: 420px;
@@ -429,9 +414,9 @@ font-family: 'Dosis', sans-serif;
   background-image: url(../img/bg/bg-body2.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .tracks-img {
   width: 128px;
@@ -490,6 +475,9 @@ font-family: 'Dosis', sans-serif;
   height: 422px;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   margin-bottom: 45px;
   padding: 32px;
 }
@@ -514,6 +502,7 @@ font-family: 'Dosis', sans-serif;
 .history {
   width: 100%;
   height: auto;
+  padding-top: 150px;
   background-image: url(../img/bg/bg-body4.jpg);
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -760,7 +749,6 @@ label.error:after {
   text-align: center;
   padding-left: 60px;
   padding-right: 60px;
-  margin-top: 150px;
   margin-bottom: 60px;
 }
 .heading--mt-300 {
