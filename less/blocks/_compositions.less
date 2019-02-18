@@ -2,6 +2,8 @@
 	padding-top: 150px;
 }
 .composition__video {
+	cursor: pointer;
+	width: 100%;
 	height: 420px;
 	margin-bottom: 50px;
 }
@@ -32,10 +34,16 @@
 	margin-bottom: 50px;
 }
 .composition__disc-card--special {
+	margin-top: 0;
 	background-color: transparent;
-	margin-top: 370px;
 	margin-bottom: 300px;
 	height: 500px;
+	@media (min-width: 1200px) {
+	
+	margin-top: 370px;
+	
+	}
+	
 }
 .composition__disc-card--triangle-1 {
 	@cornerSize: 12px;
@@ -74,7 +82,7 @@
 	
 }
 .social {
-	width: 330px;
+	width: 250px;
 	height: 53px;
 	font-size: 14px;
 	line-height: 24px;
@@ -85,8 +93,8 @@
 	display: flex;
 	-webkit-align-items: center;
 	        align-items: center;
-	    -webkit-justify-content: space-around;
-	            justify-content: space-around;
+	    -webkit-justify-content: space-between;
+	            justify-content: space-between;
 	
 }
 .social-icon-text {
@@ -94,18 +102,21 @@
 }
 
 .social-icon-1,.social-icon-2,.social-icon-3,.social-icon-4 {
-	width: 15px;
-	height: 15px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 19px;
+	height: 19px;
 }
 .social-icon-1{
-	background-image: url(../img/social/sound.png);
+	background-image: url(../img/social/sound.svg);
 }
 .social-icon-2{
-	background-image: url(../img/social/heart.png);
+	background-image: url(../img/social/heart.svg);
 }
 .social-icon-3{
-	background-image: url(../img/social/share.png);
+	background-image: url(../img/social/share.svg);
 }
 .social-icon-4{
-	background-image: url(../img/social/comment.png);
+	background-image: url(../img/social/comment.svg);
 }

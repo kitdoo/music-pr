@@ -4,14 +4,58 @@
 	line-height: 24px;
 	font-weight: 700;
 	color: #000;
-	border-bottom: 1px solid #000;
+	
+	position: relative;
+		&:after {
+		content: "";
+		position: absolute;
+		left: 0px;
+		top: 25px;
+		right: 0px;
+		border-bottom: 1px solid #000;
+		width:100%;
+	}
+}
+.card-date--t-line {
+	margin-top: 70px;
+		&:before {
+		content: "";
+		position: absolute;
+		left: 0px;
+		top: -60px;
+		height: 50px;
+		border-left: 1px solid #000;
+		margin-left: 40px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}	
+}
+.card-date--b-line {
+	margin-bottom: 165px;
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0px;
+		top: 45px;
+		height: 167px;
+		border-left: 1px solid #000;
+		margin-left: 40px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
 }
 .type-date--no-line {
-	border-bottom: none;
+		&:after {
+		content: "";
+		border-bottom: none;
+	}
 }
 .type-date--mb-300 {
 	margin-bottom: 300px;
 }
+
+
+
 
 .type-name{
 	text-align: left;
@@ -24,12 +68,27 @@
 .type-name--white {
 	color: #FFF;
 }
+
+
 .card-title{
 	padding-top: 40px;
 	padding-bottom: 20px;
 	font-size: 23px;
 	line-height: 24px;
 	color: #000;
+}
+.card-title--t-line {
+	position: relative;
+    margin-bottom: 15px;
+		&:after {
+		content: "";
+		position: absolute;
+		left: 0px;
+		top: 85px;
+		border-top: 1px solid #000;
+		width:133px;
+		
+	}
 }
 .card-title--pt-75{
 	padding-top: 75px;
@@ -38,10 +97,13 @@
 	margin-bottom: 20px;
 	
 }
+
+
 .card-sub {
 	font-size: 14px;
 	line-height: 24px;
-	letter-spacing: 1.8;	
+	letter-spacing: 1.8;
+	position: relative;	
 }
 .card-sub--m-b-35{
 	margin-bottom: 35px;

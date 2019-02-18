@@ -9,8 +9,19 @@
         	background-size: 100%;
 }
 .contacts__block {
+	display: flex;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+	border-top: 1px solid #000;
+	padding-top: 20px;
+	margin-bottom: 300px;
+
+	@media (min-width: 768px) {
 	height: 192px;
 	border-left: 1px solid #000;
+	border-top: none;
 	display: flex;
 	-webkit-flex-direction: column;
 	    -ms-flex-direction: column;
@@ -19,6 +30,7 @@
 	        align-items: center;
 	-webkit-justify-content: space-between;
 	        justify-content: space-between;
+	}
 	 a{
 		cursor: pointer;
 		text-decoration: none;
@@ -45,17 +57,23 @@
 .contact-form {
 	
 }
+.form-group {
+	position: relative;
+	padding-bottom: 50px;
+	margin-bottom: 0;	
+}
 .contact-form__input {
 	width: 100%;
 	color: #000;
 	font-size: 14px;
 	line-height: 24px;
-	margin-top: 60px;
-	margin-bottom: 11px;
 	border: none;
 	text-align: left;
 	background-color: transparent;
 	border-bottom: 1px solid #000;
+	&:focus {
+		border-bottom: 1px solid #62a2ad;
+	}
 
 }	
 .contact-form__input--mt-0 {
@@ -76,43 +94,44 @@ input {
 	text-transform: uppercase;
 	background-color: transparent;
 	border: none;
-	margin-bottom: 300px;
+	margin-bottom: 50px;
+	@media (min-width: 768px) {
+	margin-bottom: 250px;}
 }
 label.error {
-	//background-color: #b2b2b2;
-	background-color: transparent;
-	border: 3px solid #b2b2b2;
-	position: relative;
+	position: absolute;
+	top: 36px;
+	left: 0;
+	right: 0;
+	background-color: #eab6b6;
 	display: block;
-	-webkit-border-radius: 8px;
-	border-radius: 8px;
 	color: #000;
-	padding: 5px 15px 8px;
+	padding: 5px 15px 5px;
 	font-weight: 700;
 	font-size: 14px;
 	margin-bottom: 0px;
 	margin-top: 0px;
 	
-	@cornerSize: 12px;
+	@cornerSize: 8px;
 	
 	&:after {
 		content: "";
 		position: absolute;
-		top: -12px;
+		top: -8px;
 		bottom: 100%;
 		left: 40px;
 		
 		margin-left: -@cornerSize;
 		width: 0;
 		height: 0;
-		border-bottom: @cornerSize solid #b2b2b2;
+		border-bottom: @cornerSize solid #eab6b6;
 		border-right: @cornerSize solid transparent;
 		border-left: @cornerSize solid transparent;	
 	}
 }
 
 .contact-form__success {
-    background-color: #b2b2b2;
+    background-color: #62a2ad;
     display: block;
     border-radius: 8px;
     color: #000;
