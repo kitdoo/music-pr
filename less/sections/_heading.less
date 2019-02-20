@@ -1,7 +1,7 @@
 .heading{
 	font-family: 'Dosis', sans-serif;
-	font-size: 24px;
-	line-height: 30px;
+	font-size: 30px;
+	line-height: 32px;
 	color: #454545;
 	letter-spacing: 4.8px;
 	text-transform: uppercase;
@@ -120,10 +120,13 @@
 .heading--events {
 	color: #42717E;
 	text-align: left;
-	margin-top: 150px;
+	margin-top: 50px;
 	margin-bottom: 70px;
 	padding-left: 0;
 	padding-right: 0;
+	@media (min-width: 1200px) {
+		margin-top: 150px;
+	}
 	@media (min-width: 1200px) {
 		margin-top: 300px;
 	&:before {
@@ -180,10 +183,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 150px;
-	p{ font-size: 14px;
-		@media (min-width: 768px) {
-		font-size: 16px;}
-	}
+	
 }
 .subtitle--history-date-line {
 	width: 279px;

@@ -229,6 +229,7 @@ font-family: 'Dosis', sans-serif;
   }
 }
 .header-img {
+  max-width: 428px;
   height: 397px;
   margin-left: auto;
   margin-right: auto;
@@ -236,6 +237,9 @@ font-family: 'Dosis', sans-serif;
   background-image: url(../img/title.png);
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
 }
 @media (min-width: 1200px) {
   .header-img {
@@ -355,7 +359,7 @@ font-family: 'Dosis', sans-serif;
   background-image: url(../img/video/v3.jpg);
 }
 .composition__disc-card {
-  height: 580px;
+  height: 600px;
   background-color: #f5f6f6;
   padding: 35px 60px 40px 20px;
   position: relative;
@@ -381,7 +385,7 @@ font-family: 'Dosis', sans-serif;
 .composition__disc-card--special p {
   font-size: 14px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .composition__disc-card--special p {
     font-size: 16px;
   }
@@ -457,7 +461,7 @@ font-family: 'Dosis', sans-serif;
 .social-wrapper {
   height: 106px;
   position: absolute;
-  bottom: 35px;
+  bottom: 5px;
   display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -469,6 +473,8 @@ font-family: 'Dosis', sans-serif;
 }
 @media (min-width: 1200px) {
   .social-wrapper {
+    position: absolute;
+    bottom: 35px;
     height: 53px;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -888,12 +894,22 @@ label.error:after {
   transition-delay: 0, 0.3s;
 }
 .section {
-  padding-top: 150px;
+  padding-top: 50px;
+}
+@media (min-width: 768px) {
+  .section {
+    padding-top: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 150px;
+  }
 }
 .heading {
   font-family: 'Dosis', sans-serif;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 30px;
+  line-height: 32px;
   color: #454545;
   letter-spacing: 4.8px;
   text-transform: uppercase;
@@ -1014,10 +1030,15 @@ label.error:after {
 .heading--events {
   color: #42717E;
   text-align: left;
-  margin-top: 150px;
+  margin-top: 50px;
   margin-bottom: 70px;
   padding-left: 0;
   padding-right: 0;
+}
+@media (min-width: 1200px) {
+  .heading--events {
+    margin-top: 150px;
+  }
 }
 @media (min-width: 1200px) {
   .heading--events {
@@ -1075,14 +1096,6 @@ label.error:after {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 150px;
-}
-.subtitle p {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  .subtitle p {
-    font-size: 16px;
-  }
 }
 .subtitle--history-date-line {
   width: 279px;
