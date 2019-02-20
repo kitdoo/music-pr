@@ -1,15 +1,21 @@
 .heading{
 	font-family: 'Dosis', sans-serif;
-	font-size: 50px;
-	line-height: 59px;
+	font-size: 24px;
+	line-height: 30px;
 	color: #454545;
 	letter-spacing: 4.8px;
 	text-transform: uppercase;
 	text-align: center;
-	padding-left: 60px;
-	padding-right: 60px;
 	margin-bottom: 60px;
 	position: relative;
+	@media (min-width: 768px) {
+		font-size: 36px;
+		line-height: 40px;
+		padding-left: 60px;
+		padding-right: 60px;
+		font-size: 50px;
+		line-height: 59px;
+	}
 }
 
 .heading--history-date-line{
@@ -174,6 +180,10 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 150px;
+	p{ font-size: 14px;
+		@media (min-width: 768px) {
+		font-size: 16px;}
+	}
 }
 .subtitle--history-date-line {
 	width: 279px;

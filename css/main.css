@@ -229,7 +229,6 @@ font-family: 'Dosis', sans-serif;
   }
 }
 .header-img {
-  width: 428px;
   height: 397px;
   margin-left: auto;
   margin-right: auto;
@@ -279,6 +278,7 @@ font-family: 'Dosis', sans-serif;
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
+  cursor: pointer;
   text-align: center;
   margin-bottom: 90px;
   padding-top: 15px;
@@ -355,11 +355,16 @@ font-family: 'Dosis', sans-serif;
   background-image: url(../img/video/v3.jpg);
 }
 .composition__disc-card {
-  height: 420px;
+  height: 580px;
   background-color: #f5f6f6;
   padding: 35px 60px 40px 20px;
   position: relative;
   margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .composition__disc-card {
+    height: 420px;
+  }
 }
 .composition__disc-card--special {
   margin-top: 0;
@@ -369,7 +374,16 @@ font-family: 'Dosis', sans-serif;
 }
 @media (min-width: 1200px) {
   .composition__disc-card--special {
+    font-size: 16px;
     margin-top: 370px;
+  }
+}
+.composition__disc-card--special p {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .composition__disc-card--special p {
+    font-size: 16px;
   }
 }
 @media (min-width: 1200px) {
@@ -467,6 +481,9 @@ font-family: 'Dosis', sans-serif;
 }
 .card-wrapper {
   height: auto;
+}
+.tracks {
+  width: 100%;
 }
 .tracks-wrapper {
   width: 100%;
@@ -615,11 +632,13 @@ font-family: 'Dosis', sans-serif;
   padding-bottom: 0px;
   padding-top: 40px;
 }
-@media (min-width: 1650px) {
+@media (min-width: 1500px) {
   .hdl-2 {
     width: 150px;
     border-top: 1px solid #B2B2B2;
   }
+}
+@media (min-width: 1700px) {
   .hdl-3 {
     width: 145px;
     border-top: 1px solid #B2B2B2;
@@ -873,16 +892,24 @@ label.error:after {
 }
 .heading {
   font-family: 'Dosis', sans-serif;
-  font-size: 50px;
-  line-height: 59px;
+  font-size: 24px;
+  line-height: 30px;
   color: #454545;
   letter-spacing: 4.8px;
   text-transform: uppercase;
   text-align: center;
-  padding-left: 60px;
-  padding-right: 60px;
   margin-bottom: 60px;
   position: relative;
+}
+@media (min-width: 768px) {
+  .heading {
+    font-size: 36px;
+    line-height: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 50px;
+    line-height: 59px;
+  }
 }
 .heading--history-date-line {
   font-size: 16px;
@@ -1049,6 +1076,14 @@ label.error:after {
   margin-right: auto;
   margin-bottom: 150px;
 }
+.subtitle p {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .subtitle p {
+    font-size: 16px;
+  }
+}
 .subtitle--history-date-line {
   width: 279px;
   display: block;
@@ -1173,6 +1208,11 @@ label.error:after {
   line-height: 24px;
   font-weight: 700;
   position: relative;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 .button a {
   position: absolute;

@@ -33,23 +33,32 @@
 
 .composition__disc-card {
 	position: relative;
-	height: 420px;
+	height: 580px;
 	background-color: #f5f6f6;
 	padding: 35px 60px 40px 20px;
 	position: relative;
 	margin-bottom: 50px;
+	@media (min-width: 768px) {
+	height: 420px;
+	}
 }
 .composition__disc-card--special {
 	margin-top: 0;
 	background-color: transparent;
 	margin-bottom: 300px;
 	height: 500px;
+	
 	@media (min-width: 1200px) {
-	
+	font-size: 16px;
 	margin-top: 370px;
-	
 	}
-	
+	p {
+		font-size: 14px;
+		@media (min-width: 768px) {
+		font-size: 16px;
+	}
+		
+	}
 }
 @media (min-width: 1200px) {
 		
