@@ -3,13 +3,13 @@ height: 1350px;
 background: linear-gradient(to top, #fafafa, #ffffff 50%);
 width: 100%;
 height: auto;
-padding-top: 150px;
+//padding-top: 150px;
 background-image: url(../img/bg/bg-body1.png);
 background-repeat: no-repeat;
-background-position: left bottom;
--webkit-background-size: 100%;
-     -o-background-size: 100%;
-        background-size: 100%;
+	background-position: left bottom;
+	-webkit-background-size: 100%;
+	     -o-background-size: 100%;
+	        background-size: 100%;
 }
 .discography__vid-title {
 	font-size: 23px;
@@ -54,7 +54,11 @@ background-position: left bottom;
 	background-image: url(../img/play/play3.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
-	margin-bottom: 550px;
+	margin-bottom: 250px;
+	@media (min-width: 1200px) {
+		margin-bottom: 550px;
+	}
+	
 }
 .discography__vid-play--white{
 	color: #FFF;

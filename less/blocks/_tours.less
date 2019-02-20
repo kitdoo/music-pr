@@ -1,11 +1,18 @@
 .tours {
 	width: 100%;
 	height: auto;
-	padding-top: 150px;
 	background-image: url(../img/bg/bg-img-99.png);
 	background-repeat: no-repeat;
-	background-position: left bottom;
-	-webkit-background-size: 100%;
+	background-position: center;
+	-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+	@media (min-width: 1200px) {
+		-webkit-background-size: 100%;
 	     -o-background-size: 100%;
 	        background-size: 100%;
+	}
+}
+.tours-head {
+	//padding-top: 150px;
 }

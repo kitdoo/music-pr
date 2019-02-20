@@ -1,5 +1,5 @@
 .compositions{
-	padding-top: 150px;
+	//padding-top: 150px;
 }
 .composition__video {
 	cursor: pointer;
@@ -7,7 +7,12 @@
 	height: 420px;
 	margin-bottom: 50px;
 }
-
+.composition-card {
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+	height: auto;
+}
 .composition__video--1, .composition__video--2, .composition__video--3 {
 	background-repeat: no-repeat;
 	background-position: center;
@@ -17,6 +22,7 @@
 }
 .composition__video--1 {
 	background-image: url(../img/video/v1.jpg);
+	
 }
 .composition__video--2 {
 	background-image: url(../img/video/v2.jpg);
@@ -45,12 +51,15 @@
 	}
 	
 }
+@media (min-width: 1200px) {
+		
+	
 .composition__disc-card--triangle-1 {
 	@cornerSize: 12px;
 	&:after {
 		content: "";
 		position: absolute;
-		left: 633px;
+		left: 600px;
 		top: 200px;
 		
 		margin-left: @cornerSize;
@@ -68,7 +77,7 @@
 	&:after {
 		content: "";
 		position: absolute;
-		right: 645px;
+		right: 600px;
 		top: 200px;
 		
 		margin-left: @cornerSize;
@@ -79,23 +88,23 @@
 		border-bottom: @cornerSize solid transparent;
 		
 	}
-	
+}	
 }
 .social {
 	width: 250px;
 	height: 53px;
 	font-size: 14px;
 	line-height: 24px;
-	position: absolute;
-	right: 60px;
-	bottom: 35px;
-	padding-top: 30px;	
+	
+	
 	display: flex;
 	-webkit-align-items: center;
 	        align-items: center;
 	    -webkit-justify-content: space-between;
 	            justify-content: space-between;
-	
+	@media (min-width: 1200px) {
+	padding-top: 30px;	
+	margin-left: 40px;}
 }
 .social-icon-text {
 	margin-left: -20px;
@@ -119,4 +128,30 @@
 }
 .social-icon-4{
 	background-image: url(../img/social/comment.svg);
+}
+.social-wrapper {
+	height: 106px;
+	//margin-bottom: 25px;
+	position: absolute;
+	bottom: 35px;
+			display: flex;
+			-webkit-flex-direction: column;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+	-webkit-align-items: flex-start;
+	        align-items: flex-start;
+	    -webkit-justify-content: flex-end;
+	            justify-content: flex-end;
+	@media (min-width: 1200px) {
+		height: 53px;
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+	-webkit-align-items: flex-end;
+	        align-items: flex-end;
+	    -webkit-justify-content: flex-start;
+	            justify-content: flex-start;}
+}
+.card-wrapper {
+	height: auto;
 }
