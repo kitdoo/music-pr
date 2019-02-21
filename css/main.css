@@ -104,9 +104,15 @@ a {
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/*@media (min-width: 1200px) {
+/*
+
+@media (min-width: 768px) {
 		margin-bottom: 0px;
-	}*/
+	}
+@media (min-width: 1200px) {
+		margin-bottom: 0px;
+	}
+	*/
 /*
 
 font-family: 'Open Sans', sans-serif;
@@ -394,7 +400,7 @@ font-family: 'Dosis', sans-serif;
   .composition__disc-card--triangle-1:after {
     content: "";
     position: absolute;
-    left: 600px;
+    left: 573px;
     top: 200px;
     margin-left: 12px;
     width: 0;
@@ -406,7 +412,7 @@ font-family: 'Dosis', sans-serif;
   .composition__disc-card--triangle-2:after {
     content: "";
     position: absolute;
-    right: 600px;
+    right: 585px;
     top: 200px;
     margin-left: 12px;
     width: 0;
@@ -506,7 +512,7 @@ font-family: 'Dosis', sans-serif;
   height: 29px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 160px;
+  margin-top: 50px;
   margin-bottom: 40px;
   background-image: url(../img/music-slider.png);
   background-repeat: no-repeat;
@@ -514,6 +520,16 @@ font-family: 'Dosis', sans-serif;
   -webkit-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
+}
+@media (min-width: 768px) {
+  .tracks-img {
+    margin-top: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .tracks-img {
+    margin-top: 160px;
+  }
 }
 .tarcks-slider__title {
   color: #FFF;
@@ -537,6 +553,9 @@ font-family: 'Dosis', sans-serif;
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 55px;
+}
+.w100 {
+  width: 100%;
 }
 .events {
   width: 100%;
@@ -626,9 +645,10 @@ font-family: 'Dosis', sans-serif;
   display: flex;
   -webkit-align-items: center;
   align-items: center;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  padding-top: 250px;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 250px;
 }
 .history-date-line__title {
   width: 279px;
@@ -638,21 +658,27 @@ font-family: 'Dosis', sans-serif;
   padding-bottom: 0px;
   padding-top: 40px;
 }
-@media (min-width: 1500px) {
-  .hdl-2 {
-    width: 150px;
-    border-top: 1px solid #B2B2B2;
+@media (min-width: 768px) {
+  .line {
+    position: absolute;
+    top: 29px;
+    width: 95%;
+    height: 1px;
+    background-color: #B4B6B5;
+    z-index: 1;
+  }
+  .bg-wh {
+    padding: 0 30px;
+    background-color: #FFF;
+  }
+  .wrapp {
+    background-color: #FFF;
+    padding: 0 70px;
   }
 }
-@media (min-width: 1700px) {
-  .hdl-3 {
-    width: 145px;
-    border-top: 1px solid #B2B2B2;
-  }
-  .hdl-4 {
-    width: 145px;
-    border-top: 1px solid #B2B2B2;
-  }
+.position {
+  position: relative;
+  z-index: 2;
 }
 .contacts {
   width: 100%;
@@ -906,6 +932,9 @@ label.error:after {
     padding-top: 150px;
   }
 }
+.padding {
+  padding: 0;
+}
 .heading {
   font-family: 'Dosis', sans-serif;
   font-size: 30px;
@@ -930,8 +959,6 @@ label.error:after {
 .heading--history-date-line {
   font-size: 16px;
   color: #B2B2B2;
-  padding-left: 0px;
-  padding-right: 0px;
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
@@ -946,6 +973,8 @@ label.error:after {
 }
 .heading--hdl-1 {
   color: #575A59;
+  padding-left: 0;
+  padding-right: 0;
 }
 @media (min-width: 768px) {
   .heading--hdl-1:after {
