@@ -385,7 +385,7 @@ font-family: 'Dosis', sans-serif;
 @media (min-width: 1200px) {
   .composition__disc-card--special {
     font-size: 16px;
-    margin-top: 370px;
+    margin-top: 150px;
   }
 }
 .composition__disc-card--special p {
@@ -959,6 +959,8 @@ label.error:after {
 .heading--history-date-line {
   font-size: 16px;
   color: #B2B2B2;
+  padding-left: 0;
+  padding-right: 0;
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
@@ -1155,7 +1157,7 @@ label.error:after {
   top: 25px;
   right: 0px;
   border-bottom: 1px solid #000;
-  width: 100%;
+  width: 10px;
 }
 .card-date--t-line {
   margin-top: 70px;
@@ -1244,26 +1246,18 @@ label.error:after {
 .button {
   width: 192px;
   height: 53px;
+  color: #000;
   border: 1px solid #000;
   text-align: center;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
-  position: relative;
+  padding-top: 11px;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-}
-.button a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding-top: 12px;
-  width: 100%;
-  color: #000;
-  text-decoration: none;
 }
 .button .fa {
   margin-left: 15px;
@@ -1271,10 +1265,12 @@ label.error:after {
 .button:hover,
 .button:focus,
 .button:active {
+  color: #000;
   border: 1px solid transparent;
   background-color: #abacac;
 }
 .button--special {
+  color: #000;
   position: absolute;
   left: 0px;
   bottom: -60px;
